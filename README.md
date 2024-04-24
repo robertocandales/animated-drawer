@@ -4,7 +4,7 @@ A brief description of your project.
 
 <div style="display: flex; justify-content: space-between;">
   <img src="https://github.com/robertocandales/animated-drawer/assets/61159123/424193e2-6c73-4802-a02c-f21220498ae7" alt="Image 1" width="30%">
-  <img src="https://github.com/robertocandales/animated-drawer/assets/61159123/d63dfc4a-3f86-4873-b8e0-b412d7327264" alt="Image 2" width="30%">
+  <img src="https://github.com/robertocandales/animated-drawer/assets/61159123/3ba615dc-8233-4adb-b200-9b481f0a9398" alt="Image 2" width="30%">
   <img src="https://github.com/robertocandales/animated-drawer/assets/61159123/4eb20b53-7297-4b01-b37b-8042189c374f" alt="Image 3" width="30%">
 </div>
 
