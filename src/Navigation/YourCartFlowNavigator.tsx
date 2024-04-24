@@ -1,25 +1,25 @@
 import React from 'react';
-import { CompositeScreenProps } from '@react-navigation/native';
-import { createNativeStackNavigator, NativeStackScreenProps } from '@react-navigation/native-stack';
-import { DrawerScreenProps } from '@react-navigation/drawer';
-import { RootStackParamList } from './RootNavigator';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import YourCartScreen from '@/Screens/YourCartScreen';
+import { useHeaderOptions } from '@/shared/hooks/useHeaderOptions';
+import { SharedValue } from 'react-native-reanimated';
+
+interface YourCartFlowNavigatorProps {
+  drawerAnimation: SharedValue<number>;
+}
+
 export type YourCartFlowStackParamList = {
   YourCartScreen: undefined;
 };
 
-export type YourCartFlowScreenProps<Screen extends keyof YourCartFlowStackParamList> =
-  CompositeScreenProps<
-    NativeStackScreenProps<YourCartFlowStackParamList, Screen>,
-    DrawerScreenProps<RootStackParamList>
-  >;
-
 const Stack = createNativeStackNavigator<YourCartFlowStackParamList>();
 
-const YourCartFlowNavigator = () => {
+const YourCartFlowNavigator: React.FC<YourCartFlowNavigatorProps> = ({ drawerAnimation }) => {
+  const { options } = useHeaderOptions(drawerAnimation);
+
   return (
     <Stack.Navigator>
-      <Stack.Screen name='YourCartScreen' component={YourCartScreen} />
+      <Stack.Screen options={options} name='YourCartScreen' component={YourCartScreen} />
     </Stack.Navigator>
   );
 };

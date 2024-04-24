@@ -1,26 +1,24 @@
 import StartScreen from '@/Screens/StartScreen';
 import React from 'react';
-import { CompositeScreenProps } from '@react-navigation/native';
-import { createNativeStackNavigator, NativeStackScreenProps } from '@react-navigation/native-stack';
-import { DrawerScreenProps } from '@react-navigation/drawer';
-import { RootStackParamList } from './RootNavigator';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { SharedValue } from 'react-native-reanimated';
+import { useHeaderOptions } from '@/shared/hooks/useHeaderOptions';
+
+interface StartFlowNavigatorProps {
+  drawerAnimation: SharedValue<number>;
+}
 
 export type StartFlowStackParamList = {
   StartScreen: undefined;
 };
 
-export type StartFlowScreenProps<Screen extends keyof StartFlowStackParamList> =
-  CompositeScreenProps<
-    NativeStackScreenProps<StartFlowStackParamList, Screen>,
-    DrawerScreenProps<RootStackParamList>
-  >;
-
 const Stack = createNativeStackNavigator<StartFlowStackParamList>();
 
-const StartFlowNavigator = () => {
+const StartFlowNavigator: React.FC<StartFlowNavigatorProps> = ({ drawerAnimation }) => {
+  const { options } = useHeaderOptions(drawerAnimation);
   return (
     <Stack.Navigator>
-      <Stack.Screen name='StartScreen' component={StartScreen} />
+      <Stack.Screen options={options} name='StartScreen' component={StartScreen} />
     </Stack.Navigator>
   );
 };

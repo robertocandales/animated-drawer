@@ -1,11 +1,15 @@
-import 'react-native-gesture-handler';
-import { SafeAreaProvider } from 'react-native-safe-area-context';
-import Navigation from '@/Navigation';
+import RootNavigation from '@/Navigation/RootNavigation';
+import { StackNavigationProvider } from '@/state/StackNavigationProvider';
+import { NavigationContainer } from '@react-navigation/native';
 
-export default function App() {
+const App = () => {
   return (
-    <SafeAreaProvider>
-      <Navigation />
-    </SafeAreaProvider>
+    <StackNavigationProvider>
+      <NavigationContainer>
+        <RootNavigation />
+      </NavigationContainer>
+    </StackNavigationProvider>
   );
-}
+};
+
+export default App;
