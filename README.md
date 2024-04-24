@@ -20,7 +20,7 @@ To run the project it is necessary to use node.js version v18.0.0 and yarn
 
 1. Clone the repository.
    ```shell
-   git clone https://github.com/your-username/your-repo.git
+   git clone https://github.com/robertocandales/animated-drawer.git
    ```
 2. Install the dependencies.
    ```shell
