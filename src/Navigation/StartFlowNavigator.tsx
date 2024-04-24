@@ -3,6 +3,7 @@ import React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { SharedValue } from 'react-native-reanimated';
 import { useHeaderOptions } from '@/shared/hooks/useHeaderOptions';
+import TabNavigator from './TabNavigator';
 
 interface StartFlowNavigatorProps {
   drawerAnimation: SharedValue<number>;
@@ -18,7 +19,7 @@ const StartFlowNavigator: React.FC<StartFlowNavigatorProps> = ({ drawerAnimation
   const { options } = useHeaderOptions(drawerAnimation);
   return (
     <Stack.Navigator>
-      <Stack.Screen options={options} name='StartScreen' component={StartScreen} />
+      <Stack.Screen options={options} name='StartScreen' component={TabNavigator} />
     </Stack.Navigator>
   );
 };
