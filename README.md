@@ -2,6 +2,10 @@
 
 A brief description of your project.
 
+![animation](https://github.com/robertocandales/animated-drawer/assets/61159123/feb8d983-5186-4c05-a9bf-c81f52b03342)
+
+
+
 ## Table of Contents
 
 - [Installation](#installation)
