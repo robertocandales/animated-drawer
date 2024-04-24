@@ -10,8 +10,7 @@ A brief description of your project.
 
 
 
-
-![animation](https://github.com/robertocandales/animated-drawer/assets/61159123/feb8d983-5186-4c05-a9bf-c81f52b03342)
+![animation](https://github.com/robertocandales/animated-drawer/assets/61159123/913824bf-0561-450d-a682-bfc9a7a9d346)
 
 
 https://github.com/robertocandales/animated-drawer/assets/61159123/cbbfa5de-011d-4741-a8fa-6d5de4debc72
