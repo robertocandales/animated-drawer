@@ -8,13 +8,9 @@ A brief description of your project.
   <img src="https://github.com/robertocandales/animated-drawer/assets/61159123/4eb20b53-7297-4b01-b37b-8042189c374f" alt="Image 3" width="30%">
 </div>
 
-
-
 ![animation](https://github.com/robertocandales/animated-drawer/assets/61159123/913824bf-0561-450d-a682-bfc9a7a9d346)
 
-
 https://github.com/robertocandales/animated-drawer/assets/61159123/cbbfa5de-011d-4741-a8fa-6d5de4debc72
-
 
 ## Table of Contents
 
@@ -26,7 +22,7 @@ https://github.com/robertocandales/animated-drawer/assets/61159123/cbbfa5de-011d
 
 ## Installation
 
-To run the project it is necessary to use node.js version v18.0.0 and yarn
+To run the project it is necessary to use node.js version v18.18.0 and yarn
 
 1. Clone the repository.
    ```shell
