@@ -1,6 +1,6 @@
 # Animated Drawer
 
-A brief description of your project.
+This is an animated drawer component created using React Native, React Native Reanimated, and React Native Navigation.
 
 <div style="display: flex; justify-content: space-between;">
   <img src="https://github.com/robertocandales/animated-drawer/assets/61159123/424193e2-6c73-4802-a02c-f21220498ae7" alt="Image 1" width="30%">
